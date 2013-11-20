@@ -1,0 +1,4 @@
+EGLexPeriodico
+==============
+
+Periodico practica
