@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="xUS-Fe-3XN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Lex News-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="EGViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kxv-NQ-cpX"/>
+                        <viewControllerLayoutGuide type="bottom" id="uuc-uI-QGp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9G-3Z-7Rp">
+                                <rect key="frame" x="0.0" y="115" width="320" height="453"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo noticia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0h-bc-MGu">
+                                        <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="epr-8y-iGP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor noticia" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCV-Ph-bp1">
+                                        <rect key="frame" x="20" y="35" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="CLn-F2-fb1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ctb-4C-r9d">
+                                        <rect key="frame" x="20" y="64" width="280" height="349"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rY-2h-Ekw">
+                                        <rect key="frame" x="20" y="421" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="ir a DesarrolloWeb">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="abrirEnlaceEnNavegador:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yk2-6a-acF"/>
+                                            <segue destination="WwG-sL-SNh" kind="push" identifier="irABuscador" id="p15-Gs-ztx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2rY-2h-Ekw" secondAttribute="trailing" constant="20" id="5dP-cd-GcQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ctb-4C-r9d" secondAttribute="bottom" constant="40" id="DoK-KG-vFB"/>
+                                    <constraint firstItem="fCV-Ph-bp1" firstAttribute="leading" secondItem="z9G-3Z-7Rp" secondAttribute="leading" constant="20" id="EhS-hG-pgb"/>
+                                    <constraint firstItem="Ctb-4C-r9d" firstAttribute="top" secondItem="fCV-Ph-bp1" secondAttribute="bottom" constant="8" id="HiI-rx-K3z"/>
+                                    <constraint firstAttribute="trailing" secondItem="fCV-Ph-bp1" secondAttribute="trailing" constant="20" id="Ifn-C0-h1b"/>
+                                    <constraint firstItem="s0h-bc-MGu" firstAttribute="leading" secondItem="z9G-3Z-7Rp" secondAttribute="leading" constant="20" id="NRk-U8-WJt"/>
+                                    <constraint firstItem="Ctb-4C-r9d" firstAttribute="leading" secondItem="z9G-3Z-7Rp" secondAttribute="leading" constant="20" id="O1u-l9-3Bp"/>
+                                    <constraint firstItem="s0h-bc-MGu" firstAttribute="top" secondItem="z9G-3Z-7Rp" secondAttribute="top" constant="20" id="PV4-Bt-KJQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="2rY-2h-Ekw" secondAttribute="bottom" constant="2" id="f09-ec-vKy"/>
+                                    <constraint firstItem="fCV-Ph-bp1" firstAttribute="top" secondItem="s0h-bc-MGu" secondAttribute="bottom" constant="-6" id="fMY-Dc-7pu"/>
+                                    <constraint firstItem="2rY-2h-Ekw" firstAttribute="top" secondItem="Ctb-4C-r9d" secondAttribute="bottom" constant="8" id="kK4-al-eZt"/>
+                                    <constraint firstItem="2rY-2h-Ekw" firstAttribute="leading" secondItem="z9G-3Z-7Rp" secondAttribute="leading" constant="20" id="mJ0-2K-QMl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ctb-4C-r9d" secondAttribute="trailing" constant="20" id="pNG-EJ-NBn"/>
+                                    <constraint firstAttribute="trailing" secondItem="s0h-bc-MGu" secondAttribute="trailing" constant="20" id="uql-HI-6Th"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVz-ZM-FMu">
+                                <rect key="frame" x="0.0" y="115" width="100" height="453"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="BGc-uB-hdG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQG-pa-fYN">
+                                <rect key="frame" x="0.0" y="-115" width="100" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu2-5x-nLt">
+                                        <rect key="frame" x="25" y="14" width="60" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="sFG-7j-aNq"/>
+                                            <constraint firstAttribute="height" constant="30" id="xX5-dj-2Re"/>
+                                        </constraints>
+                                        <state key="normal" title="Nacional">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nacionalPulsarBoton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lwM-m0-7CF"/>
+                                            <action selector="pulsarMenuItemActionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yDx-gl-Azx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmq-71-YoB">
+                                        <rect key="frame" x="25" y="52" width="38" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8OW-cI-INV"/>
+                                            <constraint firstAttribute="width" constant="38" id="pSw-Az-yQv"/>
+                                        </constraints>
+                                        <state key="normal" title="Local">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="localPulsarBoton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q42-Os-lYl"/>
+                                            <action selector="pulsarMenuItemActionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wZf-AA-OiU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Oq-WS-WMT">
+                                        <rect key="frame" x="25" y="90" width="63" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="63" id="4g6-8Q-Vz7"/>
+                                            <constraint firstAttribute="height" constant="30" id="bKd-Oz-IoM"/>
+                                        </constraints>
+                                        <state key="normal" title="Deportes">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deportesPulsarBoton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eMK-N6-ftm"/>
+                                            <action selector="pulsarMenuItemActionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Pc-Nk-KTT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xf-e9-aXV">
+                                        <rect key="frame" x="25" y="128" width="50" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="NmM-y1-J9M"/>
+                                            <constraint firstAttribute="width" constant="50" id="QD5-Bo-6M9"/>
+                                        </constraints>
+                                        <state key="normal" title="Cultura">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="culturaPulsarBoton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L0c-ov-p5f"/>
+                                            <action selector="pulsarMenuItemActionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iAp-wf-FMl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaR-ov-wkf">
+                                        <rect key="frame" x="25" y="166" width="40" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="EUX-Zx-DHC"/>
+                                            <constraint firstAttribute="width" constant="40" id="K6b-a2-utK"/>
+                                        </constraints>
+                                        <state key="normal" title="Salud">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pulsarMenuItemActionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XhB-MF-tea"/>
+                                            <action selector="saludPulsarBoton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aEc-eX-04i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Pmq-71-YoB" firstAttribute="leading" secondItem="IQG-pa-fYN" secondAttribute="leading" constant="25" id="6oI-oH-Lgw"/>
+                                    <constraint firstItem="8Xf-e9-aXV" firstAttribute="leading" secondItem="IQG-pa-fYN" secondAttribute="leading" constant="25" id="9Ek-vd-EQS"/>
+                                    <constraint firstItem="Pmq-71-YoB" firstAttribute="top" secondItem="Yu2-5x-nLt" secondAttribute="bottom" constant="8" id="AZ8-vK-wuw"/>
+                                    <constraint firstItem="Yu2-5x-nLt" firstAttribute="top" secondItem="IQG-pa-fYN" secondAttribute="top" constant="14" id="DVx-ri-tb8"/>
+                                    <constraint firstAttribute="width" constant="100" id="Fjm-wo-N5R"/>
+                                    <constraint firstAttribute="height" constant="222" id="IDK-g0-xOU"/>
+                                    <constraint firstItem="8Xf-e9-aXV" firstAttribute="top" secondItem="3Oq-WS-WMT" secondAttribute="bottom" constant="8" id="hzF-eS-1zo"/>
+                                    <constraint firstItem="jaR-ov-wkf" firstAttribute="leading" secondItem="IQG-pa-fYN" secondAttribute="leading" constant="25" id="jRp-VZ-IOz"/>
+                                    <constraint firstItem="jaR-ov-wkf" firstAttribute="top" secondItem="8Xf-e9-aXV" secondAttribute="bottom" constant="8" id="kKc-IM-zsu"/>
+                                    <constraint firstItem="3Oq-WS-WMT" firstAttribute="leading" secondItem="IQG-pa-fYN" secondAttribute="leading" constant="25" id="lOc-CP-NK9"/>
+                                    <constraint firstItem="Yu2-5x-nLt" firstAttribute="leading" secondItem="IQG-pa-fYN" secondAttribute="leading" constant="25" id="nZb-yq-nM0"/>
+                                    <constraint firstItem="3Oq-WS-WMT" firstAttribute="top" secondItem="Pmq-71-YoB" secondAttribute="bottom" constant="8" id="sYc-Oz-Yfj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cjc-r2-GeM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="FwV-H5-8qP"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dh-x3-Lw6">
+                                <rect key="frame" x="0.0" y="115" width="100" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="5ZV-C1-6ni"/>
+                                    <constraint firstAttribute="width" constant="100" id="wGr-LC-eiD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="MENÚ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pulsarMenuActionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mww-Q5-Atx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lex News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3S-Cn-8sx">
+                                <rect key="frame" x="15" y="46" width="285" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="fa2-Oi-Qld"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="z9G-3Z-7Rp" secondAttribute="trailing" id="3eM-4A-dxD"/>
+                            <constraint firstAttribute="centerX" secondItem="f3S-Cn-8sx" secondAttribute="centerX" constant="2.5" id="6F0-Eg-vh2"/>
+                            <constraint firstItem="uuc-uI-QGp" firstAttribute="top" secondItem="zVz-ZM-FMu" secondAttribute="bottom" id="Btz-Fh-yxu"/>
+                            <constraint firstItem="zVz-ZM-FMu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="HRl-wz-Agm"/>
+                            <constraint firstItem="z9G-3Z-7Rp" firstAttribute="top" secondItem="Cjc-r2-GeM" secondAttribute="bottom" id="Kj8-0X-OA7"/>
+                            <constraint firstItem="5dh-x3-Lw6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="RL9-Ve-4Fr"/>
+                            <constraint firstItem="zVz-ZM-FMu" firstAttribute="top" secondItem="Cjc-r2-GeM" secondAttribute="bottom" id="T58-bX-ZJA"/>
+                            <constraint firstItem="Cjc-r2-GeM" firstAttribute="top" secondItem="5dh-x3-Lw6" secondAttribute="top" constant="-115" id="XNK-IZ-2N3"/>
+                            <constraint firstItem="uuc-uI-QGp" firstAttribute="top" secondItem="z9G-3Z-7Rp" secondAttribute="bottom" id="Zvg-Tu-dHj"/>
+                            <constraint firstItem="Cjc-r2-GeM" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="bs6-kn-qmj"/>
+                            <constraint firstItem="z9G-3Z-7Rp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="c3G-Ct-ToP"/>
+                            <constraint firstItem="IQG-pa-fYN" firstAttribute="top" secondItem="Cjc-r2-GeM" secondAttribute="bottom" constant="-230" id="dq8-84-xJA"/>
+                            <constraint firstItem="IQG-pa-fYN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="gfW-MB-LvG"/>
+                            <constraint firstItem="f3S-Cn-8sx" firstAttribute="top" secondItem="Cjc-r2-GeM" secondAttribute="top" constant="46" id="ter-vB-Tl3"/>
+                            <constraint firstItem="Cjc-r2-GeM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="vR6-M1-Cl1"/>
+                            <constraint firstAttribute="trailing" secondItem="Cjc-r2-GeM" secondAttribute="trailing" id="zLV-H8-YO5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lex News" id="iw1-Bj-AZQ"/>
+                    <connections>
+                        <outlet property="autorNoticiaLabel" destination="fCV-Ph-bp1" id="lSB-6G-muk"/>
+                        <outlet property="contenidoNoticiaTextView" destination="Ctb-4C-r9d" id="CgV-f0-jGp"/>
+                        <outlet property="culturaButton" destination="8Xf-e9-aXV" id="Djg-tc-GeX"/>
+                        <outlet property="deportesButton" destination="3Oq-WS-WMT" id="pyt-3B-pD7"/>
+                        <outlet property="fondoMenuButtonsView" destination="IQG-pa-fYN" id="mDm-05-y08"/>
+                        <outlet property="fondoMenuView" destination="zVz-ZM-FMu" id="XJ2-JW-EN1"/>
+                        <outlet property="fuenteEnlaceLabel" destination="2rY-2h-Ekw" id="kyU-Qo-UVk"/>
+                        <outlet property="localButton" destination="Pmq-71-YoB" id="q4f-B4-ser"/>
+                        <outlet property="menuButton" destination="5dh-x3-Lw6" id="ZdZ-Kx-q4B"/>
+                        <outlet property="nacionalButton" destination="Yu2-5x-nLt" id="JAs-0X-KTb"/>
+                        <outlet property="saludButton" destination="jaR-ov-wkf" id="10n-9y-Hdm"/>
+                        <outlet property="tituloNoticiaLabel" destination="s0h-bc-MGu" id="mX9-0a-K3Q"/>
+                        <outlet property="tituloPeriodicoLabel" destination="f3S-Cn-8sx" id="niF-Xb-ctu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="25"/>
+        </scene>
+        <!--Navegador WebVC-->
+        <scene sceneID="bJm-om-Z2r">
+            <objects>
+                <viewController id="WwG-sL-SNh" customClass="EGNavegadorWebVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g4s-bo-0Z3"/>
+                        <viewControllerLayoutGuide type="bottom" id="bfi-ps-0eL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="35h-UU-amf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jXR-Ca-Gqd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="navegadorWebView" destination="jXR-Ca-Gqd" id="6up-CV-x4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63q-J0-LnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1067" y="32"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="88N-tf-Ote">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xUS-Fe-3XN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P1V-gb-l7t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Kdg-Cx-PFt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIf-P2-1tP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="693"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
